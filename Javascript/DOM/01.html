@@ -1,0 +1,16 @@
+<html>
+    <script>
+        function calculate() {
+            const first = document.getElementById("o").value;
+            const second = document.getElementById("t").value;
+            const el = document.getElementById("finalSum");
+            el.innerHTML = parseInt(first) + parseInt(second);
+        }
+    </script>
+    <body>
+        <input type="text" placeholder="first number" id="o"></input><br></br>
+        <input type="text" placeholder="second number" id="t"></input><br></br>
+        <button onclick="calculate()">Calculate</button><br></br>
+        <div id="finalSum"></div>
+    </body>
+</html>

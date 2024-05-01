@@ -1,0 +1,20 @@
+1. When you run npm i then the command goes to package.json and install the dependencies that it can see there.
+
+2. To reduce re-renders in react just move the states below the App() function and proceed by movding that fields in different components and basically add states in that component or else REACT.MEMO can also be used
+
+3. If want to memoize the function then use "useCallback()"
+
+4. If want to memoize values or computations then use "useMemo()"
+
+5.React memo checks for changes between the previous and current values for a given prop passed to the component.
+
+6. Lazy loading is like when we first lauch the website then the sever gives all the index html and all the files at once instead of that only give files of that page which user currently requires and gradually increase it .
+
+7.Prop drilling is a fundamental concept in React that involves passing data down through nested components in a React application. It plays a crucial role in maintaining communication between parent and child components within the component tree.
+
+8. Context API is nothing but to solve the problem of Prop Dilling, its a way of teleporting states without disturbing any other componenets
+
+9.Even though context api teleports state then also it will rerender the componenets that are above it so it is not that optimised but we can say that instead of prop Dilling we can use context as a sugar coat.
+
+10.Recoil is use for state management just like Redux
+

@@ -1,0 +1,5 @@
+1. target in the file is like which echma script verwsion you want to target while writing code
+2. outDir is like when you compile the ts file then where should the js file be stored
+3. rootDir is lile when you run the command tsc -b then where should the compiler look for the ts file
+4. noimplicitAny is used to control the strictness of the language
+5. 

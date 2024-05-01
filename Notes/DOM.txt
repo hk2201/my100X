@@ -1,0 +1,27 @@
+1. document.getElementById("something").elements.length;
+--> So if there are many elements with that Id then it will give you the length that means basically how many are there.
+
+2. document.getElementById("something").innerHTML = "Something that i want";
+--> THis will change the inner HTML for that ID field
+
+3. const para = document.createElement("something");
+--> para.innerHTML = "Something that i want".
+--> document.body.appendChild(para) > will append in the DOM tree.
+--> similarly removeChild, appendChild, replaceChild and write
+
+4. var p = document.querySelectorAll('p')
+--> Access one or more elements from the DOM that matches one or more CSS Selector
+
+5. document.getElementById("something").setAttribute("class", "democlass").
+--> Will add attributes to existing fields or elements
+
+6. <h2 onclick = "this.innerHTML = 'Oooops!'">Click on this text</h2>
+--> will change the innerHTML for this tag only
+
+7. <input oninput="upperCase()"></input>
+--> when user will input in the field the upperCase function will be triggered and in that we can apply any logic that we want
+
+8. onload and onunload events are triggered when the user enters or leaves the page.
+
+9. document.getElementById("something").addEventListener("Click", myfunction).
+--> basically it will insert event like onclick to that element and myfunction will be like what to do after Click
