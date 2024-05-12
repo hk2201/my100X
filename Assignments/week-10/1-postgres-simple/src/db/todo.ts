@@ -10,7 +10,8 @@ import { client } from "..";
  * }
  */
 export async function createTodo(userId: number, title: string, description: string) {
-    
+    await client.connect();
+
 }
 /*
  * mark done as true for this specific todo.
