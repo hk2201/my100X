@@ -6,7 +6,7 @@ interface User {
     password: string;
 }
 
-type UpdateProps = Pick<User, 'name' | 'age' | 'email'> // Picking out only items that i need
+type UpdateProps = Pick<User, 'name' | 'age' | 'email'> // Picking out only items that i need but mostly interface user does the job
 
 type updatePropsOptional = Partial<UpdateProps> // If i want to make them optional
 
