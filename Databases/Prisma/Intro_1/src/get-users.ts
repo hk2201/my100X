@@ -23,7 +23,7 @@ async function main() {
 
 main()
     .then(async () => {
-        console.log("Done with the query")
+        console.log("Done with the transaction")
         await prisma.$disconnect()
     })
     .catch(async (e) => {

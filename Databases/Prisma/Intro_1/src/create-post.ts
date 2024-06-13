@@ -7,7 +7,7 @@ async function main() {
     await prisma.post.create({
         data: {
             title: "Social Media",
-            content: "Some Content",
+            content: "Znew",
             author: {
                 connect: {
                     id: 1
@@ -19,7 +19,7 @@ async function main() {
 
 main()
     .then(async () => {
-        console.log("Done with the query")
+        console.log("Done with the Transaction")
         await prisma.$disconnect()
     })
     .catch(async (e) => {
