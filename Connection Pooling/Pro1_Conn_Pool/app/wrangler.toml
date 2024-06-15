@@ -4,6 +4,8 @@ main = "src/index.ts"
 compatibility_date = "2024-06-10"
 compatibility_flags = ["nodejs_compat"]
 
+DATABASE_URL="prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiZWNmNzQzZDktNTU4NC00Mjc0LThlMWYtMGI0Yzg4ZjUyODdmIiwidGVuYW50X2lkIjoiNjNmMGMwODM0ZTk4M2JjMzMzN2YxMDY1Y2MzZTg3YWIwNTcwNWIxNzMwMGExMTU2NTVmNzAzYWM5MWZmYmUwOSIsImludGVybmFsX3NlY3JldCI6IjE3YjQ3YjJhLTBjOGEtNDk2Mi04Y2M0LWJkZmYzYjIzZWI5MyJ9.S8COBzQOBUFFMGC1y4VixxRtou4rj5OJNzxGQYYPzC8"   
+
 # Automatically place your workloads in an optimal location to minimize latency.
 # If you are running back-end logic in a Worker, running it closer to your back-end infrastructure
 # rather than the end user may result in better performance.
