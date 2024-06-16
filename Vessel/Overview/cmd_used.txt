@@ -1,2 +1,6 @@
 1.  npm create hono@latest // To initialize new empty pro
-2. 
+2.  npm i prisma and npx prisma init // Initialize prisma in project
+3.  npx prisma migrate dev --name init_schema // Migrate DB
+4.  npx prisma generate --no-engine // Generate Prisma Client
+5.  npm install @prisma/extension-accelerate // Add Accelerate extension
+6.  
