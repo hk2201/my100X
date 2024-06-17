@@ -3,6 +3,6 @@ compatibility_date = "2023-12-01"
 
 
 [vars]
-DATABASE_URL = "postgresql://Posts_owner:w3XPsqR8coVF@ep-mute-dust-a1u1ith5.ap-southeast-1.aws.neon.tech/Vessel?sslmode=require"
+DATABASE_URL = "prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiMGVkNzIwZWItN2EwMy00MDE1LWFlODktZmZiNGM3M2JkMzI2IiwidGVuYW50X2lkIjoiOTBmOGFmYzg0NTliOWMxMzA4ZGY3ZmNkMmI5MTc1ZTZmNjM1M2NjMDk2NmU1NjBhODYzOGZiZDNkYmU3NmYyOCIsImludGVybmFsX3NlY3JldCI6ImY1YTNkMzdjLTNhMzktNDk4ZS1hMDgwLThmZjdlMmI1ZGI1NCJ9.uLGxZud049sVNT4RSZFPhSk5xSEtxap0CtPhWsQQQ60"
 JWT_SECRET = "myHkSecret"
 
