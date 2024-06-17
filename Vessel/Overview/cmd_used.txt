@@ -3,4 +3,4 @@
 3.  npx prisma migrate dev --name init_schema // Migrate DB
 4.  npx prisma generate --no-engine // Generate Prisma Client
 5.  npm install @prisma/extension-accelerate // Add Accelerate extension
-6.  
+6.  npm run dev
