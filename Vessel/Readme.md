@@ -1,5 +1,7 @@
 The stack
 
+--> React
+
 -->Cloudflare workers in the backend
 
 -->zod as the validation library, type inference for the frontend types
@@ -13,4 +15,6 @@ The stack
 -->jwt for authentication
 
 --> Hono (Similar to Express) // Using this because on cloudflare express does not work properly
+
+--> Common pulished on NPM
  

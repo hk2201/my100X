@@ -4,17 +4,17 @@ import { Hono } from "hono";
 import { verify } from "hono/jwt";
 
 export const bookRouter = new Hono<{
-    Bindings: {
-        DATABASE_URL: string;
-        JWT_SECRET: string;
-    },
-    Variables: {
-        userId: string
-    }
+	Bindings: {
+		DATABASE_URL: string;
+		JWT_SECRET: string;
+	},
+	Variables: {
+		userId: string
+	}
 }>();
 
 bookRouter.use(async (c, next) => {
-    const jwt = c.req.header('Authorization');
+	const jwt = c.req.header('Authorization');
 	if (!jwt) {
 		c.status(401);
 		return c.json({ error: "unauthorized" });
@@ -26,13 +26,13 @@ bookRouter.use(async (c, next) => {
 		return c.json({ error: "unauthorized" });
 	}
 	c.set('userId', String(payload.id));
-	await next()	
+	await next()
 });
 
 bookRouter.post('/', async (c) => {
 	const userId = c.get('userId');
 	const prisma = new PrismaClient({
-		datasourceUrl: c.env?.DATABASE_URL	,
+		datasourceUrl: c.env?.DATABASE_URL,
 	}).$extends(withAccelerate());
 
 	const body = await c.req.json();
@@ -51,7 +51,7 @@ bookRouter.post('/', async (c) => {
 bookRouter.put('/', async (c) => {
 	const userId = c.get('userId');
 	const prisma = new PrismaClient({
-		datasourceUrl: c.env?.DATABASE_URL	,
+		datasourceUrl: c.env?.DATABASE_URL,
 	}).$extends(withAccelerate());
 
 	const body = await c.req.json();
@@ -72,9 +72,9 @@ bookRouter.put('/', async (c) => {
 bookRouter.get('/:id', async (c) => {
 	const id = c.req.param('id');
 	const prisma = new PrismaClient({
-		datasourceUrl: c.env?.DATABASE_URL	,
+		datasourceUrl: c.env?.DATABASE_URL,
 	}).$extends(withAccelerate());
-	
+
 	const post = await prisma.blog.findUnique({
 		where: {
 			id

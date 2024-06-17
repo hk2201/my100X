@@ -4,3 +4,9 @@
 4.  npx prisma generate --no-engine // Generate Prisma Client
 5.  npm install @prisma/extension-accelerate // Add Accelerate extension
 6.  npm run dev
+7. npx wrangler login // First we need to login in then only we'll be able to deploy
+8. npx wrangler whoami
+9. npm init -y
+10. npx tsc ---init
+11. npm login
+12. npm publish --access public
