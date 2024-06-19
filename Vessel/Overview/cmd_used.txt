@@ -10,3 +10,8 @@
 10. npx tsc ---init
 11. npm login
 12. npm publish --access public
+
+-------------------------------FRONTEND-PART---------------------------------------------------
+
+1. npm create vite@latest // Initialize
+
