@@ -7,7 +7,7 @@ export const Quote = () => {
                     above and beyond to address my concerns"</div>
                 <div>
                     <div className="max-w-md text-xl font-semibold mt-5">
-                        Harshad Khandare
+                        HK
                     </div>
                     <div className="max-w-md font-bold text-slate-400 text-sm">CEO, Acme Inc</div>
                 </div>
