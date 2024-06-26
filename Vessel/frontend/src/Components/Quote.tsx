@@ -3,7 +3,7 @@ export const Quote = () => {
         <div className="flex justify-center">
             <div className="max-w-lg">
 
-                <div className="max-w-lg font-bold text-3xl">"The customer service I received was exceptional.The support team went
+                <div className="max-w-lg font-bold text-3xl">"The customer service we received was exceptional.The support team went
                     above and beyond to address my concerns"</div>
                 <div>
                     <div className="max-w-md text-xl font-semibold mt-5">
