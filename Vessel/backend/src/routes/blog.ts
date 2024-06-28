@@ -13,7 +13,7 @@ export const bookRouter = new Hono<{
 	}
 }>();
 
-bookRouter.use(async (c, next) => {
+bookRouter.use('/*', async (c, next) => {
 	const jwt = c.req.header('Authorization');
 	if (!jwt) {
 		c.status(401);
@@ -85,3 +85,24 @@ bookRouter.get('/:id', async (c) => {
 })
 
 // Blog Bulk pending
+bookRouter.get('/bulk', async (c) => {
+	const prisma = new PrismaClient({
+		datasourceUrl: c.env.DATABASE_URL,
+	}).$extends(withAccelerate())
+	const blogs = await prisma.blog.findMany({
+		select: {
+			content: true,
+			title: true,
+			id: true,
+			author: {
+				select: {
+					name: true
+				}
+			}
+		}
+	});
+
+	return c.json({
+		blogs
+	})
+})
