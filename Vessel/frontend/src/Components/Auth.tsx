@@ -4,7 +4,6 @@ import { SignupType } from "@harshadk/vessel-common";
 import axios from "axios";
 import { BACKEND_URL } from "../Config";
 
-
 export const Auth = ({ type }: { type: "signup" | "signin" }) => {
     const navigate = useNavigate();
     const [postInputs, setPostInputs] = useState<SignupType>({
@@ -14,19 +13,16 @@ export const Auth = ({ type }: { type: "signup" | "signin" }) => {
     });
 
     async function sendRequest() {
-
         try {
             const response = await axios.post(`${BACKEND_URL}/api/v1/user/${type === "signup" ? "signup" : "signin"}`, postInputs);
             const jwt = response.data;
             localStorage.setItem("token", jwt);
             navigate("/blogs");
         } catch (e) {
-            //Alert Laga Do.
+            alert("Error while signing up")
+            // alert the user here that the request failed
         }
-
-
     }
-
 
     return <div className="h-screen flex justify-center flex-col">
         <div className="flex justify-center">
@@ -43,13 +39,13 @@ export const Auth = ({ type }: { type: "signup" | "signin" }) => {
                     </div>
                 </div>
                 <div className="pt-8">
-                    {type === "signup" ? <LabelledInput label="Name" placeholder="Harshad Khandare..." onChange={(e) => {
+                    {type === "signup" ? <LabelledInput label="Name" placeholder="Harkirat Singh..." onChange={(e) => {
                         setPostInputs({
                             ...postInputs,
                             name: e.target.value
                         })
                     }} /> : null}
-                    <LabelledInput label="Username" placeholder="harshad@gmail.com" onChange={(e) => {
+                    <LabelledInput label="Username" placeholder="harkirat@gmail.com" onChange={(e) => {
                         setPostInputs({
                             ...postInputs,
                             email: e.target.value
