@@ -1,14 +1,14 @@
 import { ChangeEvent, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { SignupType } from "@harshadk/vessel-common";
+import { SigninInput } from "@100xdevs/medium-common";
 import axios from "axios";
 import { BACKEND_URL } from "../Config";
 
 export const Auth = ({ type }: { type: "signup" | "signin" }) => {
     const navigate = useNavigate();
-    const [postInputs, setPostInputs] = useState<SignupType>({
+    const [postInputs, setPostInputs] = useState<SigninInput>({
         name: "",
-        email: "",
+        username: "",
         password: ""
     });
 
@@ -48,7 +48,7 @@ export const Auth = ({ type }: { type: "signup" | "signin" }) => {
                     <LabelledInput label="Username" placeholder="harkirat@gmail.com" onChange={(e) => {
                         setPostInputs({
                             ...postInputs,
-                            email: e.target.value
+                            username: e.target.value
                         })
                     }} />
                     <LabelledInput label="Password" type={"password"} placeholder="123456" onChange={(e) => {

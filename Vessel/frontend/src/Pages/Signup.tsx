@@ -1,5 +1,5 @@
-import { Quote } from "../Components/Quote"
 import { Auth } from "../Components/Auth"
+import { Quote } from "../Components/Quote"
 
 export const Signup = () => {
     return <div>
@@ -8,7 +8,6 @@ export const Signup = () => {
                 <Auth type="signup" />
             </div>
             <div className="hidden lg:block">
-
                 <Quote />
             </div>
         </div>
