@@ -7,3 +7,7 @@
 4.Client and Server Components --> Imp Topic --> By default all components are server components
 
 5. In general if it has page.tsx then it will be treated as frontend orlese it will be treated as a backend if it is a route.tsx
+
+6. Prisma Singleton
+
+7. Server Actions
