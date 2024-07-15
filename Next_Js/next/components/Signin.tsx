@@ -11,7 +11,7 @@ export function SigninComponent() {
                 <div>
                     <div className="px-10">
                         <div className="text-3xl font-extrabold">
-                            Sign in
+                            Sign inn
                         </div>
                     </div>
                     <div className="pt-2">
