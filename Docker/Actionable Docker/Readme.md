@@ -4,3 +4,17 @@
 
 3. Just like we push code in github we can push images in docker registery
 
+4. Docker run mongo --> will run mongo
+
+5. Docker images --> will show all the images
+
+6. Docker ps --> container
+
+7. docker run -d mongo --> will run in detach mode
+
+8. docker run -p 27017:27017 mongo --> port mapping and running (if in your browser you go to that port it will be redirected accordingly)
+
+9. docker rmi --> to remove and image
+
+10. 
+
