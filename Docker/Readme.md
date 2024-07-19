@@ -16,5 +16,13 @@
 
 9. docker rmi --> to remove and image
 
-10. 
+10. We create DockerFile and in that mention out steps to run the application
+
+11. We can also add .dockerignore so that our node modules and all that dont go in the image
+
+12.docker build -t my_app . --> Command to run the build the image with giving it your personalized name (that dot is from where to build the image)
+
+13.docker run -p 3000: 3000 -e DATABASE_URL="" my_app --> a way to add you env variables
+
+14. 
 
