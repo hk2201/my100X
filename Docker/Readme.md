@@ -24,5 +24,5 @@
 
 13.docker run -p 3000: 3000 -e DATABASE_URL="" my_app --> a way to add you env variables
 
-14. 
+14. Layers in Docker --> While building the docker file we want that most of out layers are cached or else evertime we make changes then it would take a lot of time.
 
