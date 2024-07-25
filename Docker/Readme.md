@@ -26,3 +26,7 @@
 
 14. Layers in Docker --> While building the docker file we want that most of out layers are cached or else evertime we make changes then it would take a lot of time.
 
+15. Whenever we start and stop the mongo using docker then everytime we stop the docker then all out data will be lost as we are not persisting it anywhere. So in order to solve that issue we can use VOLUME and NETWORK concept so that we can persist the data.
+
+16.
+
