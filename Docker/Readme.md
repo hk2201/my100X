@@ -28,5 +28,15 @@
 
 15. Whenever we start and stop the mongo using docker then everytime we stop the docker then all out data will be lost as we are not persisting it anywhere. So in order to solve that issue we can use VOLUME and NETWORK concept so that we can persist the data.
 
-16.
+16.docker kill --> Used to kill the container
+
+17.docker exec --> to execute a command inside a container --> Basically you can access that env and run according to your req.
+
+18.docker rmi --> Used to remove the images
+
+19.Docker Compose is a tool which is desgined to help you define and run multi-container Docker applications. With Compose, you use  a YAML file to configure your applications services, networks, and volumes. Then, with a single command, you can create and start all the services from your Configurations
+
+20.Bind Mounts --> This binds the folder on your local machine to the ~folder on the container
+
+21.
 
